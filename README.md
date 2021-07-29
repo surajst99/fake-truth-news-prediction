@@ -4,6 +4,6 @@ fake truth news prediction app is used to predict the expected type of the new i
 
 || Tool | Techniques |
 | -----| -----------|
-| Python | Tfidf Vectorization, Logistic Model, Flask |
+| Python | Tfidf Vectorization, Decision Tree model, Flask |
 | html | Html, CSS, Bootstrap, Jinja Template |
 
