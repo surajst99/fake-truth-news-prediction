@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Product Rating App</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="jumbotron text-center">
+        <h1>Fake and Truth News Prediction App</h1>
+    </div>
+    <div class="form-horizontal" style="padding-left: 25px;">
+    <form action='/text' method="POST">
+        <div class='form-group'>
+        <label>Enter the News text :</label> <br>
+        <input type='text' id='text' name='text' class="form-control" style=" min-width:500px; max-width:100%;min-height:50px;height:50%;width:50%;">
+        </div>
+        <input type='submit' value='Predict Truth and Fake News' class="btn btn-default">
+    </form>
+    </div>
+
+    <div style="padding-left: 25px;text-align: center;">
+        <h2>{{type}}</h2>
+
+        {% if type == bs %}
+        <span style="font-size:500%;color:red;">&starf;</span>
+        <span style="font-size:500%;color:red;">&starf;</span>
+        <span style="font-size:500%;color:red;">&starf;</span>
+        <span style="font-size:500%;color:red;">&starf;</span>
+        <span style="font-size:500%;color:red;">&starf;</span>
+        {% elif rating == hate %}
+        <span style="font-size:500%;color:red;">&starf;</span>
+        <span style="font-size:500%;color:red;">&starf;</span>
+        <span style="font-size:500%;color:red;">&starf;</span>
+        <span style="font-size:500%;color:red;">&starf;</span>
+        {% elif rating == conspiracy %}
+        <span style="font-size:500%;color:red;">&starf;</span>
+        <span style="font-size:500%;color:red;">&starf;</span>
+        <span style="font-size:500%;color:red;">&starf;</span>
+        {% elif rating == bias %}
+        <span style="font-size:500%;color:red;">&starf;</span>
+        <span style="font-size:500%;color:red;">&starf;</span>
+        {% elif rating == fake %}
+        <span style="font-size:500%;color:red;">&starf;</span>
+        {% elif rating == state %}
+        <span style="font-size:500%;color:red;">&starf;</span>
+        {% endif %}
+
+        
+    </div>
+</body>
+</html>
