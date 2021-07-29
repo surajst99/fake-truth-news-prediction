@@ -1,1 +1,1 @@
-# Fake-News-Prediction-Web-App
+fake-truth-news-prediction
